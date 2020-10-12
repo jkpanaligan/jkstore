@@ -1,0 +1,19 @@
+.main .archived-products-section {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.main .archived-products-section .archived-product-table {
+    margin: 0 100px;
+    display: grid;
+    grid-template-rows: .2fr 1fr;
+    gap: 20px;
+}
+
+.main .archived-products-section .archived-product-table .archived-product-div{
+    display: flex;
+    justify-content: center;
+}

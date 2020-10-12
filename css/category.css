@@ -1,0 +1,133 @@
+.main .categories-section {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.main .categories-section .category-container {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.main .categories-section .category-container .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 40px;
+    gap: 10px;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
+}
+
+.main .categories-section .category-container .form-wrapper label {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary);
+}
+
+.main .categories-section .category-container .form-wrapper select {
+    border: 0.5px solid var(--primary);
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    color: black;
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+.main .categories-section .category-container .form-wrapper input {
+    border: 0.5px solid var(--primary);
+    background: transparent;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    height: 15%;
+}
+
+.main .categories-section .category-container .form-wrapper #button {
+    color: white;
+    background-color: var(--primary);
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.main .categories-section .category-container .form-wrapper #button:hover {
+    background-color: blue;
+}
+
+.main .categories-section .category-container .form-wrapper #button:focus {
+    background-color: #2796ff;
+}
+
+.main .categories-section .category-container .form-wrapper #cancel {
+    width: 100%;
+    height: 100%;
+    color: var(--primary);
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main .categories-section .category-container .category-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-bottom: 10px;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
+}
+
+.main .categories-section .category-container .category-table h1{
+    margin: 0;
+    padding: 0;
+}
+
+.main .categories-section .category-container .category-table h1 span{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary);
+}
+
+#categories td, #categories th {
+    border: 1px solid #ddd;
+    padding: 8px 50px;
+}
+
+#categories tr:hover {
+    background-color: #ddd;
+}
+
+#categories th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: white;
+}
+
+#bg-primary {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 900px) {
+    .main .categories-section .category-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

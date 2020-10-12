@@ -1,0 +1,42 @@
+/* Display errors */
+#text-danger {
+    font-size: 15px;
+    color: red;
+}
+
+/* Variables */
+:root {
+    --primary: #1762A7;
+    --secondary: #202027;
+}
+
+/* Default */
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    color: var(--secondary);
+    font-weight: 300;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+}

@@ -1,0 +1,122 @@
+.main .brands-section {
+    /* background-color: red; */
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.main .brands-section .brand-container {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+
+.main .brands-section .brand-container .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 40px;
+    gap: 20px;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
+}
+
+.main .brands-section .brand-container .form-wrapper label {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary);
+}
+
+.main .brands-section .brand-container .form-wrapper input {
+    border: 0.5px solid var(--primary);
+    background: transparent;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    height: 15%;
+}
+
+.main .brands-section .brand-container .form-wrapper #button {
+    color: white;
+    background-color: var(--primary);
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.main .brands-section .brand-container .form-wrapper #button:hover {
+    background-color: blue;
+}
+
+.main .brands-section .brand-container .form-wrapper #button:focus {
+    background-color: #2796ff;
+}
+
+.main .brands-section .brand-container .form-wrapper #cancel {
+    width: 100%;
+    height: 100%;
+    color: var(--primary);
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main .brands-section .brand-container .brand-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-bottom: 10px;
+    border: 1px solid var(--primary);
+    border-radius: .5rem;
+}
+
+.main .brands-section .brand-container .brand-table h1{
+    margin: 0;
+    padding: 0;
+}
+
+.main .brands-section .brand-container .brand-table h1 span{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary);
+}
+  
+#brands td, #brands th {
+    border: 1px solid #ddd;
+    padding: 8px 50px;
+}
+
+#brands tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#brands tr:hover {
+    background-color: #ddd;
+}
+
+#brands th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .main .brands-section .brand-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

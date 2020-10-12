@@ -1,0 +1,106 @@
+.main .home-section {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+}
+
+.main .home-section .home-container {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main .home-section .home-container .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.main .home-section .home-container .text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    margin: 0;
+}
+.main .home-section .home-container .text-container h1 span {
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.main .home-section .home-container .text-container p {
+    max-width: 600px;
+    font-size: 34px;
+    font-weight: 100;
+    margin-top: 0;
+}
+.main .home-section .home-container .text-container a {
+    width: 280px;
+    height: 30px;
+    background: var(--primary);
+    border-radius: 5px;
+    font-size: 27px;
+    font-weight: 400;
+    border: none;
+    color: #000;
+    margin-top: 50px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main .home-section .home-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+  
+.main .home-section .home-container .image-container img{
+    max-height: 424px;
+    max-width: 488px;
+    height: auto;
+    width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+    .main .home-section .home-container .text-container h1 {
+      font-size: 60px;
+    }
+    .main .home-section .home-container .text-container p {
+      font-size: 28px;
+    }
+    .main .home-section .home-container .text-container a {
+      font-size: 25x;
+    }
+  }
+  
+  /* Tablet/Mobile Large */
+  @media (max-width: 768px){
+    .main .home-section .home-container .image-container {
+      display: none;
+    }
+    .main .home-section .home-container .text-container {
+      grid-column: 1/3;
+    }
+    .main .home-section .home-container .text-container a {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 576px){
+    .main .home-section .home-container {
+      margin: 0 50px;
+    }
+    .main .home-section .home-container .text-container h1 {
+      font-size: 50px;
+    }
+    .main .home-section .home-container .text-container p {
+      font-size: 25px;
+    }
+    .main .home-section .home-container .text-container a {
+      font-size: 23x;
+    }
+  }
